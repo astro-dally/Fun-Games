@@ -7,7 +7,7 @@ Welcome to the **Fun Games** folder, home to a collection of exciting and addict
 1. **[FLAMES](https://flames-gamma.vercel.app/)**
    - A fun name compatibility game where you discover if you're destined to be **Friends**, **Lovers**, or **Enemies** based on two names! 👫💖
 
-2. **[Tic-Tac-Toe](https://tic-tac-toe-pi-green-85.vercel.app/)**
+2. **[Tic-Tac-Toe](https://fun-games-xoqa.vercel.app/)**
    - The classic 3x3 grid game where you challenge your friends (or the AI) to get three X's or O's in a row! 🏆
 
 ### 🚀 How to Play
