@@ -24,7 +24,7 @@ Tic-Tac-Toe is a 2-player game played on a 3x3 grid. Players take turns marking 
 3. **Take Turns:** Click on the grid to place your mark.
 4. **Win or Draw:** Get three in a row or wait for the AI to make its move. Try not to lose!
 
-[Play Tic-Tac-Toe here!](https://tic-tac-toe-pi-green-85.vercel.app/)
+[Play Tic-Tac-Toe here!](https://fun-games-xoqa.vercel.app/)
 
 ### 🚧 Built With
 
