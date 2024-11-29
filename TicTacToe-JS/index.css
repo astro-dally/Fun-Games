@@ -1,0 +1,42 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cell:hover {
+    background-color: #e0e0e0;
+  }
+  h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

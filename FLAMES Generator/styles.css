@@ -1,0 +1,192 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff9a44);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  } */
+  
+  h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: shake 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes shake {
+    0% { transform: rotate(-1deg); }
+    100% { transform: rotate(1deg); }
+  }
+  
+  .container {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  input {
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:hover {
+    border-color: #ff9aa2; /* Subtle hover effect */
+  }
+  
+  input:focus {
+    border-color: #ff6f91;
+    box-shadow: 0 6px 15px rgba(255, 111, 145, 0.3);
+    background-color: #fff7f9; /* Slightly pinkish background on focus */
+  }
+  
+
+  
+  button {
+    font-size: 1rem;
+    background: linear-gradient(45deg, #ffa502, #ff6348);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.5s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #ff6348, #ffa502);
+    transform: translateY(-1px) scale(1.0);
+  }
+  
+  button:active {
+    transform: translateY(2px) scale(1);
+  }
+  
+  ::placeholder {
+    color: rgba(0, 0, 0, 0.667);
+    font-style: italic;
+  }
+  
+  
+  /* Floating emojis */
+/* Improved floating emojis with zoom-in and glow effect */
+@keyframes floatEmoji {
+    0% {
+      transform: translate(0, 0) scale(0.8);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translate(20px, -50vh) scale(1.5); /* Zoom in midway */
+      opacity: 1;
+      filter: brightness(1.5); /* Bright glow at midway */
+    }
+    70% {
+      transform: translate(-20px, -75vh) scale(1.2);
+      filter: brightness(1); /* Glow fades out */
+    }
+    100% {
+      transform: translate(0, -100vh) scale(0.6);
+      opacity: 0; /* Fade out at the top */
+    }
+  }
+  
+  .heart {
+    position: absolute;
+    bottom: -20px;
+    font-size: 24px;
+    color: #ff5e78; /* Love-themed pink */
+    animation: floatEmoji 6s infinite ease-in-out;
+    opacity: 0;
+    filter: blur(0); /* Add clarity initially */
+  }
+  
+  /* Staggered animations for different emojis */
+  .heart:nth-child(5) { /* ❤️ */
+    left: 10%;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    font-size: 30px;
+  }
+  
+  .heart:nth-child(6) { /* 😊 */
+    left: 30%;
+    animation-duration: 5.5s;
+    animation-delay: 0.5s;
+    font-size: 25px;
+  }
+  
+  .heart:nth-child(7) { /* 🫂💓 */
+    left: 50%;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    font-size: 35px;
+  }
+  
+  .heart:nth-child(8) { /* 😘 */
+    left: 70%;
+    animation-duration: 6.5s;
+    animation-delay: 1.5s;
+    font-size: 28px;
+  }
+  
+  .heart:nth-child(9) { /* 💓💖 */
+    left: 90%;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    font-size: 32px;
+  }
+  
+  /* Extra crazy glow effect at the midway point */
+  @keyframes crazyGlow {
+    0%, 100% {
+      text-shadow: none;
+    }
+    50% {
+      text-shadow: 0 0 10px #ff5e78, 0 0 20px #ff8c94, 0 0 30px #ffc1cc;
+    }
+  }
+  
+  .heart:nth-child(5),
+  .heart:nth-child(6),
+  .heart:nth-child(7),
+  .heart:nth-child(8),
+  .heart:nth-child(9) {
+    animation: floatEmoji 6s infinite ease-in-out, crazyGlow 6s infinite ease-in-out;
+  }
+
+  .result {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #ff64a0; /* Green */
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  
